@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto-Ride</title>
+    <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="image/icon/avatar1.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- .........SECTION.HEADER............. -->
+        <header class="header">
+            <a href="#!" class="header-logo">Endless<span class="header-logo-red">Ride</span></a>
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+                    <button name="add-outline" class="nav-close" id="nav-close">
+                        <svg class="header__outline" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><title>Add</title><path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='40' d='M256 112v288M400 256H112'/></svg>
+                    </button>
+                    <div class="nav__img">
+                        <picture>
+                            <source srcset="image/header/Logo.webp" type="image/webp">
+                            <img src="image/transparent/ffff-0.8.png" data-src="image/header/Logo.png" alt="moto" class="lazyload" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active">Home</a>
+                            </li>
+                                                                                            
+                            <li class="nav__item">
+                                <a href="#destinations" class="nav__link">Destinations</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="#moto" class="nav__link">Motorcycles</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="#rentals" class="nav__link">Rentals</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="#blog" class="nav__link">blog</a>
+                            </li>
+        
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__social">
+                        <a href="#!" class="nav__social-ico">
+                            <svg class="social-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M13.892,24.123h3.357v-8.124h2.239l0.297-2.799h-2.536l0.003-1.402c0-0.73,0.07-1.121,1.117-1.121h1.4v-2.8   h-2.24c-2.69,0-3.637,1.358-3.637,3.642V13.2h-1.677V16h1.677V24.123z"/><g><g><g><g><g><g><path class="sic1" d="M16,1c8.271,0,15,6.729,15,15s-6.729,15-15,15S1,24.271,1,16S7.729,1,16,1 M16,0         C7.163,0,0,7.163,0,16s7.163,16,16,16s16-7.163,16-16S24.837,0,16,0L16,0z"/></g></g></g></g></g></g></g></svg>
+                        </a>
+                        <a href="#!" class="nav__social-ico">
+                            <svg class="social-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M23.605,14.516c0.099,0.529,0.153,1.084,0.153,1.662c0,4.522-3.028,7.739-7.6,7.739   c-4.374,0-7.917-3.543-7.917-7.917s3.543-7.917,7.917-7.917c2.138,0,3.924,0.787,5.294,2.063l-2.232,2.232v-0.005   c-0.831-0.792-1.885-1.197-3.062-1.197c-2.612,0-4.735,2.207-4.735,4.819c0,2.612,2.123,4.824,4.735,4.824   c2.37,0,3.983-1.356,4.315-3.216h-4.315v-3.088L23.605,14.516L23.605,14.516z"/><g><g><g><g><g><g><path class="sic1" d="M16,1c8.271,0,15,6.729,15,15s-6.729,15-15,15S1,24.271,1,16S7.729,1,16,1 M16,0         C7.164,0,0,7.163,0,16s7.164,16,16,16s16-7.163,16-16S24.837,0,16,0L16,0z"/></g></g></g></g></g></g></g></svg>
+                        </a>
+                        <a href="#!" class="nav__social-ico">
+                            <svg class="social-icon" enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M21.874,8.167H10.126c-1.106,0-1.959,0.852-1.959,1.959v11.749c0,1.105,0.852,1.959,1.959,1.959h11.749   c1.105,0,1.959-0.852,1.959-1.959V10.126C23.833,9.019,22.98,8.167,21.874,8.167z M16.012,12.923c1.737,0,3.145,1.364,3.145,3.048   c0,1.682-1.408,3.048-3.145,3.048c-1.736,0-3.144-1.365-3.144-3.048C12.868,14.287,14.276,12.923,16.012,12.923z M21.874,21.385   c0,0.344-0.147,0.49-0.49,0.49h-10.77c-0.343,0-0.49-0.146-0.49-0.49v-6.854l1.22,0.265c-0.131,0.426-0.202,0.877-0.202,1.344   c0,2.604,2.181,4.716,4.868,4.716c2.688,0,4.868-2.112,4.868-4.716c0-0.467-0.071-0.918-0.202-1.344l1.197-0.265V21.385z    M21.874,12.574c0,0.271-0.219,0.49-0.49,0.49h-1.959c-0.271,0-0.49-0.219-0.49-0.49v-1.959c0-0.271,0.219-0.49,0.49-0.49h1.959   c0.271,0,0.49,0.219,0.49,0.49C21.874,10.615,21.874,12.574,21.874,12.574z"/><g><g class="sic1"><g><g><g><g><path d="M16,1c8.271,0,15,6.729,15,15s-6.729,15-15,15S1,24.271,1,16S7.729,1,16,1 M16,0         C7.163,0,0,7.164,0,16s7.163,16,16,16s16-7.163,16-16S24.837,0,16,0L16,0z"/></g></g></g></g></g></g></g></svg>
+                        </a>
+                        <a href="#!" class="nav__social-ico">
+                            <svg class="social-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><path d="M20.599,18.747c-0.13,0-0.224,0.037-0.281,0.114c-0.057,0.073-0.084,0.198-0.084,0.373v0.419h0.722     v-0.419c0-0.174-0.029-0.299-0.087-0.373C20.815,18.783,20.723,18.747,20.599,18.747z"/><path d="M17.783,18.732c-0.059,0-0.117,0.012-0.173,0.04c-0.057,0.027-0.113,0.07-0.168,0.127v2.588     c0.066,0.066,0.131,0.117,0.194,0.146c0.063,0.029,0.128,0.045,0.197,0.045c0.1,0,0.173-0.029,0.22-0.088     c0.047-0.058,0.072-0.152,0.072-0.286v-2.145c0-0.14-0.029-0.247-0.087-0.319C17.978,18.768,17.892,18.732,17.783,18.732z"/><path d="M22.321,15.512c-0.671-0.67-6.324-0.679-6.324-0.679c0,0-5.652,0.008-6.325,0.678     C9,16.183,8.998,19.496,8.998,19.515c0,0.025,0.001,3.332,0.674,4.004c0.672,0.67,6.325,0.684,6.325,0.684     s5.653-0.014,6.324-0.684c0.675-0.673,0.681-4.004,0.681-4.004C23.002,19.497,22.995,16.184,22.321,15.512z M13.309,17.465     h-0.952v4.813h-0.921v-4.813h-0.952v-0.818h2.825V17.465z M16,22.277h-0.815V21.82c-0.152,0.169-0.308,0.298-0.472,0.385     c-0.163,0.089-0.321,0.132-0.475,0.132c-0.19,0-0.33-0.06-0.427-0.185c-0.094-0.124-0.143-0.308-0.143-0.556v-3.473h0.816v3.186     c0,0.099,0.017,0.169,0.05,0.214c0.036,0.044,0.092,0.066,0.168,0.066c0.06,0,0.137-0.029,0.228-0.088     c0.092-0.058,0.175-0.132,0.254-0.222v-3.156H16V22.277z M18.964,21.419c0,0.294-0.064,0.519-0.192,0.676     c-0.127,0.157-0.313,0.234-0.555,0.234c-0.161,0-0.302-0.029-0.427-0.09c-0.125-0.06-0.243-0.153-0.349-0.281v0.319h-0.825     v-5.631h0.825v1.813c0.111-0.126,0.227-0.224,0.35-0.289c0.125-0.066,0.25-0.099,0.377-0.099c0.259,0,0.456,0.088,0.592,0.264     c0.138,0.177,0.205,0.437,0.205,0.777V21.419z M21.796,20.301h-1.562v0.781c0,0.219,0.027,0.371,0.08,0.456     c0.055,0.085,0.146,0.126,0.277,0.126c0.135,0,0.23-0.036,0.284-0.107c0.053-0.072,0.082-0.229,0.082-0.474v-0.19h0.84v0.213     c0,0.426-0.102,0.747-0.307,0.964c-0.204,0.215-0.51,0.322-0.916,0.322c-0.365,0-0.654-0.113-0.864-0.342     c-0.21-0.227-0.316-0.541-0.316-0.942v-1.865c0-0.359,0.117-0.654,0.347-0.881c0.231-0.227,0.528-0.34,0.894-0.34     c0.374,0,0.661,0.105,0.862,0.315c0.201,0.21,0.3,0.511,0.3,0.906V20.301z"/></g><path d="M20.595,13.091h-0.92v-0.505c-0.168,0.186-0.344,0.329-0.529,0.425c-0.183,0.097-0.361,0.146-0.533,0.146    c-0.214,0-0.373-0.068-0.481-0.205c-0.107-0.136-0.161-0.34-0.161-0.614V8.515h0.918v3.508c0,0.108,0.021,0.187,0.059,0.235    c0.037,0.049,0.101,0.073,0.187,0.073c0.067,0,0.153-0.032,0.256-0.096c0.103-0.064,0.198-0.146,0.283-0.247V8.515h0.92    L20.595,13.091L20.595,13.091z"/><path d="M16.862,8.732c-0.244-0.222-0.556-0.333-0.936-0.333c-0.417,0-0.751,0.105-0.998,0.315    c-0.248,0.21-0.372,0.492-0.372,0.847v2.372c0,0.389,0.121,0.698,0.361,0.928c0.242,0.229,0.564,0.344,0.966,0.344    c0.418,0,0.745-0.111,0.986-0.334c0.237-0.223,0.357-0.53,0.357-0.921V9.588C17.225,9.239,17.103,8.954,16.862,8.732z     M16.288,12.02c0,0.122-0.037,0.218-0.11,0.289c-0.074,0.069-0.172,0.104-0.297,0.104c-0.122,0-0.216-0.034-0.281-0.102    c-0.065-0.07-0.099-0.166-0.099-0.291V9.527c0-0.1,0.036-0.181,0.105-0.243c0.071-0.061,0.161-0.092,0.274-0.092    c0.121,0,0.219,0.03,0.294,0.092c0.075,0.062,0.113,0.143,0.113,0.243V12.02z"/><polygon points="12.051,6.888 11.008,6.888 12.241,10.634 12.241,13.091 13.276,13.091 13.276,10.518     14.481,6.888 13.428,6.888 12.789,9.368 12.724,9.368   "/></g><g><g><g><g><g><g><path class="sic1" d="M16,1c8.271,0,15,6.729,15,15s-6.729,15-15,15S1,24.271,1,16S7.729,1,16,1 M16,0         C7.163,0,0,7.164,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.164,24.837,0,16,0L16,0z"/></g></g></g></g></g></g></g></svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <button name="menu-outline" class="header__toggle active" id="nav-toggle">
+                <svg xmlns='http://www.w3.org/2000/svg' class="header__outline" viewBox='0 0 512 512'><title>Menu</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='40' d='M80 160h352M80 256h352M80 352h352'/></svg>
+                <span></span>
+            </button>
+        </header>
+        <!-- ............INTRO................. -->
+        <section class="intro" id="home">
+            <div class="intro-wrap">
+                <div class="intro__card-top">
+                    <div class="intro__card-title">
+                        <h1 class="intro-title">
+                            2<span class="intro-style">,</span>500 tours in over 100 destinations
+                            and 36 years of experience<span class="intro-style">!</span>
+                        </h1>
+                    </div>
+                    <div class="intro__bike">
+                        <picture>
+                            <source srcset="image/header/moto.webp" type="image/webp">
+                            <img src="image/transparent/ffff-0.8.png" data-src="image/header/moto.png" alt="moto" class="intro__bike-img lazyload" loading="lazy">
+                        </picture> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- .............PACKEGE........... -->
+        <section class="packege">
+            <div class="container">
+                <div class="packege__inner block-inner">
+                    <div class="packege__card block-card">
+                        <div class="packege__card-item block-item">
+                            <div class="packege__card-img block-image">
+                                <picture>
+                                    <source srcset="image/packege/packege1-min.webp" type="image/webp">
+                                        <img src="image/transparent/ffff-0.8.png" data-src="image/packege/packege1-min.jpg" alt="tur" class="lazyload" loading="lazy">
+                                </picture>
+                                <div class="packege__card-price block-price">
+                                    <div class="card-price"><span>$</span>100</div>
+                                    <div class="card-subprice">per Person</div>
+                                </div>
+                            </div>
+                            <div class="packege__csrd-content block-content">
+                                <div class="packege__card-title smoll-title">
+                                    Motorcycle Expeditions
+                                </div>
+                                <p class="packege__card-text block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="packege__card-btn"><span>Book NOw</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="packege__card block-card">
+                        <div class="packege__card-item block-item">
+                            <div class="packege__card-img block-image">
+                                <picture>
+                                    <source srcset="image/packege/packege2.webp" type="image/webp">
+                                        <img src="image/transparent/ffff-0.8.png" data-src="image/packege/packege2.jpg" alt="tur2" class="lazyload" loading="lazy">
+                                </picture>
+                                <div class="packege__card-price block-price">
+                                    <div class="card-price"><span>$</span>100</div>
+                                    <div class="card-subprice">per Person</div>
+                                </div>
+                            </div>
+                            <div class="packege__csrd-content block-content">
+                                <div class="packege__card-title smoll-title">
+                                    Mountains Motorcycle Tours
+                                </div>
+                                <p class="packege__card-text block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="packege__card-btn"><span>Book NOw</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="packege__card block-card">
+                        <div class="packege__card-item block-item">
+                            <div class="packege__card-img block-image">
+                                <picture>
+                                    <source srcset="image/packege/packege3-min.webp" type="image/webp">
+                                        <img src="image/transparent/ffff-0.8.png" data-src="image/packege/packege3-min.jpg" alt="tur3" class="lazyload" loading="lazy">
+                                </picture>
+                                <div class="packege__card-price block-price">
+                                    <div class="card-price"><span>$</span>100</div>
+                                    <div class="card-subprice">per Person</div>
+                                </div>
+                            </div>
+                            <div class="packege__csrd-content block-content">
+                                <div class="packege__card-title smoll-title">
+                                    Motorcycle Adventure Tours
+                                </div>
+                                <p class="packege__card-text block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="packege__card-btn"><span>Book NOw</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ...............SECTION COMPANY......... -->
+        <section class="company section" id="destinations">
+            <div class="company__red section-content">
+                <div class="company__red-body section-body">
+                    <div class="company__red-title top-title">
+                        We are World Wide
+                    </div>
+                    <div class="company__red-content">
+                        <div class="company__red-smollcontent">
+                            <div class="company__red-smoll-title smoll-title">
+                                10 reasons why USA.
+                            </div>
+                            <p class="company__red-smolltext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </p>
+                        </div>
+                        <div class="company__red-smollcontent">
+                            <div class="company__red-smoll-title smoll-title">
+                                10 reasons why USA.
+                            </div>
+                            <p class="company__red-smolltext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </p>
+                        </div>
+                        <div class="company__red-smollcontent">
+                            <div class="company__red-smoll-title smoll-title">
+                                10 reasons why USA.
+                            </div>
+                            <p class="company__red-smolltext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company__white">
+                <div class="company__white-body">
+                    <div class="company__white-smollcontent">
+                        <div class="company__white-img">
+                            <img src="image/about/face1.jpg" alt="face-photo">
+                        </div>
+                        <div class="company__white-info">
+                            <div class="company__white-persone">
+                                <div class="company__white-name">
+                                    Alex Doe
+                                </div>
+                                <div class="company__white-profession">
+                                    Main Rider
+                                </div>
+                            </div>
+                            <p class="company__white-smolltext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="company__white-smollcontent">
+                        <div class="company__white-info">
+                            <div class="company__white-persone">
+                                <div class="company__white-name">
+                                    Steve Doe
+                                </div>
+                                <div class="company__white-profession">
+                                    Main Rider
+                                </div>
+                            </div>
+                            <p class="company__white-smolltext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            </p>
+                        </div>
+                        <div class="company__white-img white-img-left">
+                            <img src="image/about/face2.jpg" alt="face-photo">
+                        </div>
+                    </div>
+                    <div class="company__white-smollcontent">
+                        <div class="company__white-img">
+                            <img src="image/about/face3.jpg" alt="face-photo" class="lazyload">
+                        </div>
+                        <div class="company__white-info">
+                            <div class="company__white-persone">
+                                <div class="company__white-name">
+                                    Bill Doe
+                                </div>
+                                <div class="company__white-profession">
+                                    Main Rider
+                                </div>
+                            </div>
+                            <p class="company__white-smolltext">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company__moto">
+                <picture>
+                    <source srcset="image/about/about_moto.webp" type="image/webp">
+                        <img src="image/transparent/ffff-0.8.png" data-src="image/about/about_moto.png" alt="moto" class="company__moto-center lazyload" loading="lazy">
+                </picture>
+            </div>
+        </section>
+        <!-- ............TESTIMONIAL................... -->
+        <section class="testimonial" id="moto">
+            <div class="testimonial__container">
+                <div class="testimonial__header top__header">
+                    <div class="testimonial__header-title top-title">
+                        We are<span>World Wide</span>
+                    </div>
+                    <p class="testimonial__header-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="testimonial__rider">
+                    <div class="testimonial__rider-card">
+                        <div class="testimonial__rider-card-wrap">
+                            <div class="testimonial__rider-info">
+                                <div class="testimonial__rider-face">
+                                    <img src="image/testimonial/testimonial1.jpg" alt="face-rider" class="lazyload">
+                                </div>
+                                <div class="testimonial__rider-name">
+                                    <div class="testimonial-name">
+                                        John Smith
+                                    </div>
+                                    <div class="testimonial-profession">
+                                        Solo Traveller
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="testimonial__rider-text">
+                                ”Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial__rider-photo">
+                        <picture>
+                            <source srcset="image/testimonial/testimonial2.webp" type="image/webp">
+                           <img src="image/transparent/ffff-0.8.png" data-src="image/testimonial/testimonial2.png" alt="rider" class="testimonial__rider-img lazyload" loading="lazy">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ..................FEATURE............ -->
+        <section class="feature" id="rentals">
+            <div class="feature__wrap">
+                <div class="feature__container">
+                    <div class="feature__header top__header">
+                        <div class="feature__header-title top-title">
+                            Guided motorcycle tours<span>since 1880.</span>
+                        </div>
+                        <p class="feature__header-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div class="feature__guide">
+                        <div class="feature__guide-left">
+                            <div class="feature__guide-days">
+                                <div class="feature__guide-content">
+                                    <div class="feature__guide-tauzen">
+                                        <div class="feature__guide-number number">1000<span>km</span></div>
+                                        <div class="feature__guide-subnumber">2 Days</div>
+                                    </div>
+                                    <div class="feature__guide-threeth">
+                                        <div class="feature__guide-bignum">3000<span>km</span></div>
+                                        <div class="feature__guide-subbignum">7 days</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature__guide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                        <div class="feature__moto">
+                            <picture>
+                                <source srcset="image/feature/moto_back.webp" type="image/webp">
+                                <img src="image/transparent/ffff-0.8.png" data-src="image/feature/moto_back.png" alt="guide-moto" class="feature__moto-img lazyload" loading="lazy">
+                            </picture>   
+                        </div>
+                        <div class="feature__guide-right">
+                            <div class="feature__guide-countries">
+                                <div class="feature__guide-content">
+                                    <div class="feature__guide-plus">
+                                        <span class="feature__guide-supbignum counter">50+</span>
+                                        <div class="feature__guide-subsupbignum">Countries</div>
+                                    </div>
+                                    <div class="feature__guide-tauzen">
+                                        <div class="feature__guide-number number">1000<span>km</span></div>
+                                        <div class="feature__guide-subnumber">2 Days</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature__guide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <!-- ,,,,,,,,,,,,,,,,,BLOG.............. -->
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="blog__header top__header">
+                    <div class="blog__header-title top-title">
+                        Travel Blog
+                    </div>
+                    <p class="blog__header-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="blog__inner block-inner">
+                    <div class="blog__card block-card">
+                        <div class="blog__card-item block-item">
+                            <div class="blog__card-img block-image">
+                                <picture class="blog__card-picture">
+                                    <source srcset="image/packege/packege1-min.webp" type="image/webp">
+                                        <img src="image/transparent/ffff-0.8.png" data-src="image/packege/packege1-min.jpg" alt="tur" class="lazyload" loading="lazy">
+                                </picture>
+                                <div class="blog__card-price block-price">
+                                    <div class=" blog__country card-price">South east Asia</div>
+                                    <div class="card-subprice">20 May 2020</div>
+                                </div>
+                            </div>
+                            <div class="blog__csrd-content block-content">
+                                <div class="blog__card-title smoll-title">
+                                    10 reasons why USA should be on
+                                    your bucket list.
+                                </div>
+                                <p class="blog__card-text block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__card block-card">
+                        <div class="blog__card-item block-item">
+                            <div class="blog__card-img block-image">
+                                <picture>
+                                    <source srcset="image/packege/packege2.webp" type="image/webp">
+                                        <img src="image/transparent/ffff-0.8.png" data-src="image/packege/packege2.jpg" alt="tur2" class="lazyload" loading="lazy">
+                                </picture>
+                                <div class="blog__card-price block-price">
+                                    <div class="blog__country card-price">USA</div>
+                                    <div class="card-subprice">20 May 2020</div>
+                                </div>
+                            </div>
+                            <div class="blog__csrd-content block-content">
+                                <div class="blog__card-title smoll-title">
+                                    10 reasons why USA should be on
+                                     your bucket list.
+                                </div>
+                                <p class="blog__card-text block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__card block-card">
+                        <div class="blog__card-item block-item">
+                            <div class="blog__card-img block-image">
+                                <picture>
+                                    <source srcset="image/packege/packege3-min.webp" type="image/webp">
+                                        <img src="image/transparent/ffff-0.8.png" data-src="image/packege/packege3-min.jpg" alt="tur3" class="lazyload" loading="lazy">
+                                </picture>
+                                <div class="blog__card-price block-price">
+                                    <div class="blog__country card-price">Brazil</div>
+                                    <div class="card-subprice">20 May 2020</div>
+                                </div>
+                            </div>
+                            <div class="blog__csrd-content block-content">
+                                <div class="blog__card-title smoll-title">
+                                    10 reasons why USA should be on
+                                    your bucket list.
+                                </div>
+                                <p class="blog__card-text block-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ..........slider....... -->
+        <section class="slider">
+            <div class="slider__layer">
+                <div class="slider__layer-image">
+                    <picture>
+                        <source srcset="image/slider/slider.webp" type="image/webp">
+                            <img src="image/transparent/ffff-0.8.png" data-src="image/slider/slider.jpg" alt="moto" class="slider__layer-img lazyload" loading="lazy">
+                    </picture>
+                </div>
+                <div class="slider__layer-content top__header">
+                    <div class="slider__layer-title top-title">Start Your <span>Jurney</span></div>
+                    <p class="slider__layer-text layer-text1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="slider__layer">
+                <div class="slider__layer-image">
+                    <picture>
+                        <source srcset="image/slider/p44-0.webp" type="image/webp">
+                            <img src="image/transparent/ffff-0.8.png" data-src="image/slider/p44-0.jpg" alt="tur" class="slider__layer-img1 lazyload" loading="lazy">
+                    </picture>   
+                </div>
+                <div class="slider__layer-content top__header">
+                    <div class="slider__layer-title top-title">Your <span>Start</span></div>
+                    <p class="slider__layer-text layer-text2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ..............MAP........ -->
+        <section class="map">
+            <button class="map__open">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="map-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+            </button>
+            <div class="map__content">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11gGEtoWejF5MWCohMOc4sXyZx3snyb04" loading="lazy" width="100%" height="480"></iframe>
+            </div>
+        </section>
+        <!-- ........CONTACT......... -->
+        <section class="contact" id="contact">
+            <div class="contact__wrap">
+                <div class="contact__content">
+                    <div class="contact__card contact-mail">
+                        <div class="contact__logo mail-logo">
+                            <img src="image/contact/Icon.svg" alt="mail" class="lazyload">
+                        </div>
+                        <div class="contact__text mail-text">
+                            <div class="contact__title">Email</div>
+                            <a class="mail-link" href="mailto:free@psd.in.ua" target="_blank" title="mail">free@psd.in.ua</a>
+                            <a class="mail-link" href="mailto:free@psd.in.ua" target="_blank" title="mail">free@psd.in.ua</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__card contact-phone">
+                        <div class="contact__logo phone-logo">
+                            <img src="image/contact/Icon2.svg" alt="phone" class="lazyload">
+                        </div>
+                        <div class="contact__text phone-text">
+                            <div class="contact__title">Phone</div>
+                            <a class="phone-link" href="tel:+1234567890" target="_blank" title="phone">+123 456 7890</a>
+                            <a class="phone-link" href="tel:+1234567890" target="_blank" title="phone">+123 456 7890</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__card contact-map">
+                        <div class="contact__logo map-logo">
+                            <img src="image/contact/Icon3.svg" alt="map" class="lazyload">
+                        </div>
+                        <div class="contact__text map-text">
+                            <div class="contact__title">Address</div>
+                            <p class="contact__subtitle">123, Main Road, New City,</p>
+                            <p class="contact__subtitle">My Country 123456</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__sicial">
+                    <ul class="contact__item">
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="facebook__x2C__social__x2C__media_x2C__social__x2C__media_x2C_"><g><path class="tx0" d="M425.614,86.349C382.172,42.901,322.253,16.07,255.96,16.07    c-66.292,0-126.209,26.831-169.652,70.278c-43.443,43.445-70.279,103.359-70.279,169.652c0,66.29,26.836,126.209,70.279,169.652    c43.443,43.447,103.359,70.276,169.652,70.276c66.293,0,126.212-26.829,169.654-70.276    c43.443-43.443,70.282-103.362,70.282-169.652C495.896,189.708,469.058,129.794,425.614,86.349z M412.465,412.499    c-40.121,39.993-95.394,64.702-156.505,64.702c-61.109,0-116.379-24.709-156.367-64.702    C59.602,372.382,34.76,317.114,34.76,256.001c0-61.111,24.842-116.379,64.833-156.367c39.988-39.988,95.258-64.835,156.367-64.835    c61.111,0,116.384,24.847,156.505,64.835c39.988,39.988,64.698,95.256,64.698,156.367    C477.163,317.114,452.453,372.382,412.465,412.499z"/><path class="tx1" d="M276,187.316c0-9.433,4.537-13.316,9.061-13.316    c4.382,0,28.939,0,28.939,0v-43h-39.307C232.58,131,222,164.729,222,184.925V204h-24v32.603V252h24c0,58,0,126,0,126h54    c0,0,0-68,0-126h32.705l1.595-18.752L313.225,204H276V187.316z"/></g></g><g/></svg>
+                            </a>
+                        </li>
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="google__x2C__plus__x2C__icons__x2C__social__x2C_media"><g><path class="tx0" d="M425.614,86.349C382.172,42.901,322.258,16.07,255.96,16.07    c-66.297,0-126.212,26.831-169.654,70.278c-43.438,43.445-70.277,103.359-70.277,169.652c0,66.29,26.839,126.209,70.277,169.652    c43.442,43.447,103.357,70.276,169.654,70.276c66.298,0,126.212-26.829,169.654-70.276    c43.438-43.443,70.282-103.362,70.282-169.652C495.896,189.708,469.053,129.794,425.614,86.349z M412.332,412.499    c-39.993,39.993-95.261,64.702-156.372,64.702s-116.379-24.709-156.372-64.702c-40.112-40.117-64.826-95.385-64.826-156.498    c0-61.111,24.714-116.379,64.826-156.367c39.993-39.988,95.261-64.835,156.372-64.835s116.379,24.847,156.372,64.835    c40.117,39.988,64.821,95.256,64.821,156.367C477.153,317.114,452.449,372.382,412.332,412.499z"/><path class="tx1" d="M280.404,239.263c-17.668,0.265-35.337,0.265-53.005,0.265c-5.044,0-10.226-0.265-15.151,0    c-1.055,0-2.65,0.458-2.65,1.123c-0.132,10.232-0.132,21.35-0.132,30.35c14.479,0,28.694,0,43.173,0    c-0.393,0-0.79,4.453-1.458,5.92c-6.516,19.664-26.843,29.731-48.761,26.146c-27.104-4.52-43.835-29.312-38.924-56.413    c0.535-3.854,1.86-7.481,3.189-10.938c9.028-19.661,31.215-31.575,53.143-26.659c7.836,1.728,14.616,5.341,20.318,10.52    c7.973-7.971,15.549-15.532,23.782-23.768c-0.53-0.399-1.458-1.058-1.987-1.72c-19.131-16.077-41.059-22.055-65.635-17.936    c-35.475,5.714-60.974,33.616-66.42,66.161c-2.522,13.819-1.462,28.568,3.989,42.916c13.552,34.414,48.217,55.532,85.418,51.415    c18.199-1.991,34.415-8.503,46.902-21.922c18.719-19.926,23.635-43.841,20.588-70.277    C286.248,240.06,284.526,239.263,280.404,239.263z"/><path class="tx1" d="M353,237c0,0,0,3.854,0,3.722c0-1.459,0-2.654,0-3.719c0-6.776,1.365-13.552,1.232-20.461    c0-1.06-1.086-3.054-1.616-3.054c-6.104-0.268-9.616-0.268-18.616-0.268c0,8.238,0,15.946,0,23.782c0,1.462,0-0.003,0-0.003    c-10,0-20,0-29,0c0,5,0,8.243,0,9.703c0,5.049,0.996,10.228,1.389,15.276c4.916,0.266,9.688,0.53,14.865,0.53    c4.126,0.132,7.746,0,12.746,0c0,9.833,0,18.87,0,27.898c9-0.132,14,0,19,0c0-9.303,0-19.408,0-28.408c10,0,19,0,29,0    c0-5,0-9.985,0-15.297c0-1.729,0-4.703,0-9.703c-5,0-13.641,0-21.221,0C359.189,237,358,237,353,237z"/></g></g><g/></svg>
+                            </a>
+                        </li>
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="vk_._logo_._social_._media__x2C__icon"><g><path class="tx0" d="M425.614,86.344C382.172,42.91,322.258,16.066,255.96,16.066    c-66.297,0-126.212,26.844-169.654,70.277c-43.438,43.447-70.277,103.494-70.277,169.654c0,66.297,26.839,126.211,70.277,169.659    c43.442,43.438,103.357,70.276,169.654,70.276c66.298,0,126.212-26.839,169.654-70.276    c43.438-43.448,70.282-103.362,70.282-169.659C495.896,189.838,469.053,129.791,425.614,86.344z M412.332,412.498    C372.339,452.486,317.071,477.2,255.96,477.2s-116.379-24.714-156.372-64.702c-40.112-40.121-64.826-95.385-64.826-156.5    c0-61.107,24.714-116.375,64.826-156.363C139.581,59.646,194.849,34.8,255.96,34.8s116.379,24.847,156.372,64.835    c40.117,39.988,64.821,95.256,64.821,156.363C477.153,317.113,452.449,372.377,412.332,412.498z"/><path d="M388.678,189.175c-3.586-2.654-16.471-2.654-29.224-2.654    c-13.021,0.265-26.044,0.265-29.101,1.462c-2.782,1.061-9.028,16.207-17.129,31.746c-9.308,17.545-20.593,34.547-27.771,34.272    c-9.43,0-7.168-28.826-6.506-50.209c0.128-13.954-2.129-18.474-4.121-19.661c-4.917-3.459-18.464-6.771-18.464-6.771    s-40.661-3.062-46.367,14.475c7.836,1.064,21.123-1.334,15.941,53.001c-0.397,2.664-6.246,24.979-25.111-5.181    c-4.784-7.566-22.846-52.869-29.224-53.134c-20.867-0.402-41.583-1.33-48.751,2.654c-6.781,3.989,9.028,35.072,35.734,76.793    c21.648,34.272,44.635,60.847,84.491,67.485c7.571,0.804,26.972,1.59,33.218-1.325c4.111-1.997-1.069-31.485,13.149-34.415    c6.246-1.191,30.549,30.828,39.714,34.415c5.594,2.257,17.811,3.185,30.298,2.649c13.552-0.393,28.954,1.335,30.416-7.963    c3.327-20.328-41.039-46.907-42.24-59.39c-1.065-9.033,16.211-25.637,24.974-38.394    C383.492,213.619,395.459,195.023,388.678,189.175z"/></g></g><g/></svg>
+                            </a>
+                        </li>
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><path d="M20.599,18.747c-0.13,0-0.224,0.037-0.281,0.114c-0.057,0.073-0.084,0.198-0.084,0.373v0.419h0.722     v-0.419c0-0.174-0.029-0.299-0.087-0.373C20.815,18.783,20.723,18.747,20.599,18.747z"/><path d="M17.783,18.732c-0.059,0-0.117,0.012-0.173,0.04c-0.057,0.027-0.113,0.07-0.168,0.127v2.588     c0.066,0.066,0.131,0.117,0.194,0.146c0.063,0.029,0.128,0.045,0.197,0.045c0.1,0,0.173-0.029,0.22-0.088     c0.047-0.058,0.072-0.152,0.072-0.286v-2.145c0-0.14-0.029-0.247-0.087-0.319C17.978,18.768,17.892,18.732,17.783,18.732z"/><path d="M22.321,15.512c-0.671-0.67-6.324-0.679-6.324-0.679c0,0-5.652,0.008-6.325,0.678     C9,16.183,8.998,19.496,8.998,19.515c0,0.025,0.001,3.332,0.674,4.004c0.672,0.67,6.325,0.684,6.325,0.684     s5.653-0.014,6.324-0.684c0.675-0.673,0.681-4.004,0.681-4.004C23.002,19.497,22.995,16.184,22.321,15.512z M13.309,17.465     h-0.952v4.813h-0.921v-4.813h-0.952v-0.818h2.825V17.465z M16,22.277h-0.815V21.82c-0.152,0.169-0.308,0.298-0.472,0.385     c-0.163,0.089-0.321,0.132-0.475,0.132c-0.19,0-0.33-0.06-0.427-0.185c-0.094-0.124-0.143-0.308-0.143-0.556v-3.473h0.816v3.186     c0,0.099,0.017,0.169,0.05,0.214c0.036,0.044,0.092,0.066,0.168,0.066c0.06,0,0.137-0.029,0.228-0.088     c0.092-0.058,0.175-0.132,0.254-0.222v-3.156H16V22.277z M18.964,21.419c0,0.294-0.064,0.519-0.192,0.676     c-0.127,0.157-0.313,0.234-0.555,0.234c-0.161,0-0.302-0.029-0.427-0.09c-0.125-0.06-0.243-0.153-0.349-0.281v0.319h-0.825     v-5.631h0.825v1.813c0.111-0.126,0.227-0.224,0.35-0.289c0.125-0.066,0.25-0.099,0.377-0.099c0.259,0,0.456,0.088,0.592,0.264     c0.138,0.177,0.205,0.437,0.205,0.777V21.419z M21.796,20.301h-1.562v0.781c0,0.219,0.027,0.371,0.08,0.456     c0.055,0.085,0.146,0.126,0.277,0.126c0.135,0,0.23-0.036,0.284-0.107c0.053-0.072,0.082-0.229,0.082-0.474v-0.19h0.84v0.213     c0,0.426-0.102,0.747-0.307,0.964c-0.204,0.215-0.51,0.322-0.916,0.322c-0.365,0-0.654-0.113-0.864-0.342     c-0.21-0.227-0.316-0.541-0.316-0.942v-1.865c0-0.359,0.117-0.654,0.347-0.881c0.231-0.227,0.528-0.34,0.894-0.34     c0.374,0,0.661,0.105,0.862,0.315c0.201,0.21,0.3,0.511,0.3,0.906V20.301z"/></g><path d="M20.595,13.091h-0.92v-0.505c-0.168,0.186-0.344,0.329-0.529,0.425c-0.183,0.097-0.361,0.146-0.533,0.146    c-0.214,0-0.373-0.068-0.481-0.205c-0.107-0.136-0.161-0.34-0.161-0.614V8.515h0.918v3.508c0,0.108,0.021,0.187,0.059,0.235    c0.037,0.049,0.101,0.073,0.187,0.073c0.067,0,0.153-0.032,0.256-0.096c0.103-0.064,0.198-0.146,0.283-0.247V8.515h0.92    L20.595,13.091L20.595,13.091z"/><path d="M16.862,8.732c-0.244-0.222-0.556-0.333-0.936-0.333c-0.417,0-0.751,0.105-0.998,0.315    c-0.248,0.21-0.372,0.492-0.372,0.847v2.372c0,0.389,0.121,0.698,0.361,0.928c0.242,0.229,0.564,0.344,0.966,0.344    c0.418,0,0.745-0.111,0.986-0.334c0.237-0.223,0.357-0.53,0.357-0.921V9.588C17.225,9.239,17.103,8.954,16.862,8.732z     M16.288,12.02c0,0.122-0.037,0.218-0.11,0.289c-0.074,0.069-0.172,0.104-0.297,0.104c-0.122,0-0.216-0.034-0.281-0.102    c-0.065-0.07-0.099-0.166-0.099-0.291V9.527c0-0.1,0.036-0.181,0.105-0.243c0.071-0.061,0.161-0.092,0.274-0.092    c0.121,0,0.219,0.03,0.294,0.092c0.075,0.062,0.113,0.143,0.113,0.243V12.02z"/><polygon points="12.051,6.888 11.008,6.888 12.241,10.634 12.241,13.091 13.276,13.091 13.276,10.518     14.481,6.888 13.428,6.888 12.789,9.368 12.724,9.368   "/></g><g><g id="Shopping_10_112_"><g><g><g><g><path class="tx0" d="M16,1c8.271,0,15,6.729,15,15s-6.729,15-15,15S1,24.271,1,16S7.729,1,16,1 M16,0         C7.163,0,0,7.164,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.164,24.837,0,16,0L16,0z"/></g></g></g></g></g></g></g></svg>
+                            </a>
+                        </li>
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="linkedin__x2C__social__x2C__media_x2C__icons_x2C_"><g><path class="tx0" d="M425.619,86.346C382.172,42.9,322.258,16.066,255.965,16.066    c-66.297,0-126.212,26.834-169.65,70.279c-43.452,43.442-70.286,103.359-70.286,169.652c0,66.292,26.834,126.211,70.286,169.654    c43.438,43.447,103.353,70.281,169.65,70.281c66.293,0,126.207-26.834,169.654-70.281    c43.443-43.443,70.277-103.362,70.277-169.654C495.896,189.705,469.063,129.788,425.619,86.346z M412.332,412.365    c-39.993,40.126-95.251,64.835-156.367,64.835c-61.121,0-116.379-24.709-156.372-64.835    c-40.117-39.984-64.831-95.252-64.831-156.367c0-61.111,24.714-116.377,64.831-156.365C139.586,59.509,194.844,34.8,255.965,34.8    c61.116,0,116.374,24.709,156.367,64.833c40.121,39.988,64.831,95.254,64.831,156.365    C477.163,317.113,452.453,372.381,412.332,412.365z"/><polygon points="145,258.257 145,363 198,363 198,249.621 198,218 145,218   "/><path d="M310.3,218.666c-21.657,0-36.269,9.334-42.378,18.334H266v-19h-39v29.627V363h44v-70.331    c0-18.87,1.816-37.066,24.938-37.066c23.242,0,23.063,21.518,23.063,38.392V363h44v-78.039c0-7.443,0.221-14.946-0.574-21.325    C359.105,236.27,347.236,218.666,310.3,218.666z"/><path d="M172.931,147.722c-13.949,0-25.244,11.293-25.244,25.244c0,13.952,11.295,25.242,25.244,25.242    c13.95,0,25.24-11.29,25.24-25.242C198.17,159.015,186.88,147.722,172.931,147.722z"/></g></g><g/></svg>
+                            </a>
+                        </li>
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="digg__x2C__social__x2C__media__x2C__icons_x2C_"><g><path class="tx0" d="M425.614,86.281C382.172,42.981,322.253,16,255.96,16c-66.292,0-126.209,26.981-169.652,70.281    c-43.443,43.448-70.279,103.49-70.279,169.792c0,66.155,26.836,126.202,70.279,169.654C129.751,469.166,189.667,496,255.96,496    c66.293,0,126.212-26.834,169.654-70.272c43.443-43.452,70.282-103.499,70.282-169.654    C495.896,189.771,469.058,129.729,425.614,86.281z M412.465,412.432c-40.121,39.993-95.394,64.835-156.505,64.835    c-61.109,0-116.379-24.842-156.367-64.835C59.602,372.447,34.76,317.048,34.76,256.073c0-61.116,24.842-116.384,64.833-156.5    c39.988-39.993,95.258-64.708,156.367-64.708c61.111,0,116.384,24.714,156.505,64.708c39.988,40.116,64.698,95.384,64.698,156.5    C477.163,317.048,452.453,372.447,412.465,412.432z"/><path d="M221.948,208h-19.528c-2.659,0-4.419,3.434-4.419,6.088v89.673c0,2.796,1.76,1.239,4.419,1.239    h19.528c2.659,0,5.052,1.557,5.052-1.239v-89.673C227,211.434,224.607,208,221.948,208z"/><path d="M180.901,165h-19.53c-2.659,0-2.371,5.375-2.371,8.305v31.078c0,2.669-4.54,3.617-7.197,3.617    h-37.064c-2.79,0-3.739,3.434-3.739,6.088v89.673c0,2.796,0.95,1.239,3.739,1.239h66.162c2.652,0,7.099,1.557,7.099-1.239V173.305    C188,170.375,183.554,165,180.901,165z M159,280.386c0,2.649-4.54,5.614-7.197,5.614h-7.838c-2.654,0-3.965-2.965-3.965-5.614    v-42.913c0-2.659,1.311-4.473,3.965-4.473h7.838c2.657,0,7.197,1.813,7.197,4.473V280.386z"/><path d="M397.451,208h-66.431c-2.654,0-2.021,3.434-2.021,6.088v89.81c0,2.659-0.634,1.103,2.021,1.103    h37.202c2.659,0,3.777,5.938,3.777,8.589v1.997c0,2.659-1.118,4.414-3.777,4.414h-37.202c-2.654,0-2.021,2.631-2.021,5.29v13.68    c0,2.655-0.634,5.03,2.021,5.03h66.431c2.654,0,4.549-2.375,4.549-5.03V214.088C402,211.434,400.105,208,397.451,208z     M372,280.386c0,2.649-1.118,5.614-3.777,5.614h-7.836c-2.659,0-2.387-2.965-2.387-5.614v-42.913c0-2.659-0.272-4.473,2.387-4.473    h7.836c2.659,0,3.777,1.813,3.777,4.473V280.386z"/><path d="M221.948,165h-19.528c-2.659,0-4.419,5.375-4.419,8.305V192.7c0,2.654,1.76,1.3,4.419,1.3h19.528    c2.659,0,5.052,1.354,5.052-1.3v-19.396C227,170.375,224.607,165,221.948,165z"/><path d="M309.771,208h-66.563c-2.655,0-1.208,3.434-1.208,6.088v89.81c0,2.659-1.447,1.103,1.208,1.103    h37.201c2.654,0,4.591,5.938,4.591,8.589v1.997c0,2.659-1.937,4.414-4.591,4.414h-37.201c-2.655,0-1.208,2.631-1.208,5.29v13.68    c0,2.655-1.447,5.03,1.208,5.03h66.563c2.654,0,4.229-2.375,4.229-5.03V214.088C314,211.434,312.425,208,309.771,208z     M285,280.386c0,2.649-1.937,5.614-4.591,5.614h-7.841c-2.654,0-1.568-2.965-1.568-5.614v-42.913c0-2.659-1.086-4.473,1.568-4.473    h7.841c2.654,0,4.591,1.813,4.591,4.473V280.386z"/></g></g><g/></svg>
+                            </a>
+                        </li>
+                        <li class="contact__list">
+                            <a href="#!" class="contact__social-link">
+                                <svg class="contact-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="xing__x2C__logo__x2C__icons__x2C__social"><g><path class="tx0" d="M425.614,86.281C382.172,42.981,322.258,16,255.96,16c-66.297,0-126.212,26.981-169.654,70.281    c-43.438,43.448-70.277,103.49-70.277,169.792c0,66.155,26.839,126.202,70.277,169.654C129.748,469.166,189.663,496,255.96,496    c66.298,0,126.212-26.834,169.654-70.272c43.438-43.452,70.282-103.499,70.282-169.654    C495.896,189.771,469.053,129.729,425.614,86.281z M412.332,412.432c-39.993,39.993-95.261,64.835-156.372,64.835    s-116.379-24.842-156.372-64.835c-40.112-39.984-64.826-95.384-64.826-156.358c0-61.116,24.714-116.384,64.826-156.5    c39.993-39.993,95.261-64.708,156.372-64.708S372.339,59.58,412.332,99.573c40.117,40.116,64.821,95.384,64.821,156.5    C477.153,317.048,452.449,372.447,412.332,412.432z"/><polygon points="206.541,179 154.193,179 185.021,232.658 143.703,300 196.041,300 237.227,232.658   "/><polygon points="312.553,136 230.049,280.203 283.196,373 338.861,373 285.719,280.203 368.095,136   "/></g></g><g/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__wrap">
+                <div class="footer__copyright">
+                    <p>Designed By Psd.in.ua</p>
+                    <p>&copy; 2020, All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- ,,,,ЛЕНЬ Загрузка -->
+    <script>
+        if ("loading" in HTMLImageElement.prototype) {
+            var images = document.querySelectorAll('img[loading="lazy"]');
+            var sources = document.querySelectorAll("source[data-srcset]");
+            sources.forEach(function (source) {
+                source.srcset = source.dataset.srcset;
+            });
+            images.forEach(function (img) {
+                img.src = img.dataset.src;
+            });
+        } else {
+            var script = document.createElement("script");
+            script.src = "/link/to/lazyload.js";
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
