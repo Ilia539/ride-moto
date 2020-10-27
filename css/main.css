@@ -629,7 +629,7 @@ text-transform: uppercase;
   background-color: #cd0a2d;
   border-radius: 25px;
   align-self: flex-start;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   transition: .3s ease-in;
   -webkit-transition: .3s ease-in;
   -moz-transition: .3s ease-in;
@@ -640,28 +640,28 @@ text-transform: uppercase;
   position: relative;
 }
 .packege__card-btn span {
-  filter: drop-shadow(2px -1px 2px rgba(41, 21, 21, 0.5));
-  -webkit-filter: drop-shadow(2px -1px 2px rgba(41, 21, 21, 0.5));
+  filter: drop-shadow(1px 0px 5px rgba(41, 21, 21, 0.5));
+  -webkit-filter: drop-shadow(1px 0px 5px rgba(41, 21, 21, 0.5));
 }
 .packege__card-btn:hover {
-    /* background-color: #f3e7e7cf; */
-    background-color: #fff;
-
-    border: 3px solid rgb(205, 10, 45);
+    background-color: #fc0a36;
+    border: 1px solid rgb(205, 10, 45);
     transition: all 0.2s ease-in 0s;
     -webkit-transition: all 0.2s ease-in 0s;
     -moz-transition: all 0.2s ease-in 0s;
     -ms-transition: all 0.2s ease-in 0s;
     -o-transition: all 0.2s ease-in 0s;
-    color: #cd0a2d;
-
     filter: drop-shadow(6px 3px 3px rgba(41, 21, 21, 0.5));
     -webkit-filter: drop-shadow(6px 3px 3px rgba(41, 21, 21, 0.5));
+}
+.packege__card-btn:focus  {
+  background-color: #fc0a36;
+  top: 2px;
+  border: 1px solid rgb(205, 10, 45);
 }
 .packege__card-btn:active {
   top: 2px;
 }
-
 @media screen and (max-width: 1310px) {
   .packege__inner {
       margin-top: -210px;
