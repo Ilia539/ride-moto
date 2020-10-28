@@ -487,6 +487,9 @@ filter: drop-shadow(6px 3px 3px rgba(0,0,0,0.8));
   .header__outline {
       width: 25px;
   }
+  .nav__img {
+    max-width: 155px;
+}
 }
 /* ...............INTRO........ */
 .intro {
