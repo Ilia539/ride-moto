@@ -1626,7 +1626,7 @@ object-position: 25% center;
   }
 }
 .map__content {
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
   top: -177px;
   position: relative;
